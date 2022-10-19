@@ -6,7 +6,7 @@
 /*   By: lorampon <lorampon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 13:15:59 by lorampon          #+#    #+#             */
-/*   Updated: 2022/10/19 13:37:24 by lorampon         ###   ########.fr       */
+/*   Updated: 2022/10/19 13:40:30 by lorampon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ int	is_dead(t_philosopher *philo)
 			memset(philo->instance->dead, 0, 1);
 			usleep(1000);
 			printf("%zu philo %d is dead\n",
-			get_time() - philo->instance->start_time, philo->position + 1);
+				get_time() - philo->instance->start_time, philo->position + 1);
 			pthread_mutex_unlock(&philo->instance->die_mutex);
 			return (1);
 		}

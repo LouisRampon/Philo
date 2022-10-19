@@ -6,7 +6,7 @@
 /*   By: lorampon <lorampon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 13:58:13 by lorampon          #+#    #+#             */
-/*   Updated: 2022/10/19 12:05:51 by lorampon         ###   ########.fr       */
+/*   Updated: 2022/10/19 13:40:22 by lorampon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ int	init_args(t_main *instance, int argc, char **argv)
 		|| ft_atoi(argv[2], &instance->ttdie) || instance->ttdie == 0
 		|| ft_atoi(argv[3], &instance->tteat) || instance->tteat == 0
 		|| ft_atoi(argv[4], &instance->ttsleep) || instance->ttsleep == 0)
-	return (0);
+		return (0);
 	if (argc == 6 && (ft_atoi(argv[5], &instance->nbr_meals)
 			|| instance->nbr_meals == 0))
 		return (0);

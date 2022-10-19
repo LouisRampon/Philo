@@ -6,7 +6,7 @@
 /*   By: lorampon <lorampon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 13:21:46 by lorampon          #+#    #+#             */
-/*   Updated: 2022/10/19 12:08:52 by lorampon         ###   ########.fr       */
+/*   Updated: 2022/10/19 13:40:48 by lorampon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ int	eat(t_philosopher *philo)
 {
 	philo->last_meal = get_time();
 	printf("%zu philo %d is eating\n",
-		get_time() - philo->instance->start_time,philo->position + 1);
+		get_time() - philo->instance->start_time, philo->position + 1);
 	philo->threshold = philo->last_meal + philo->instance->ttdie;
 	ft_usleep(philo->instance->tteat);
 	if (drop_forks(philo))
